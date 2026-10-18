@@ -1,0 +1,29 @@
+#ASSIGNMENT_3
+# find whether right_angled triangle or not
+
+def right_angled(a ,b, c):
+    largest = max(a, b, c)
+
+    if largest == a:
+        if b ** 2 + c ** 2 == a ** 2:
+            print("Right-angled triangle")
+        else:
+            print("Not a right-angled triangle")
+
+    elif largest == b:
+        if a ** 2 + c ** 2 == b ** 2:
+            print("Right-angled triangle")
+        else:
+            print("Not a right-angled triangle")
+
+    else:
+        if a ** 2 + b ** 2 == c ** 2:
+            print("Right-angled triangle")
+        else:
+            print("Not a right-angled triangle")
+
+
+num_1 = float(input("Enter first side: "))
+num_2 = float(input("Enter second side: "))
+num_3 = float(input("Enter third side: "))
+right_angled(num_1, num_2, num_3)

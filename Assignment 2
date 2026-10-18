@@ -1,0 +1,13 @@
+#ASSIGNMENT_2
+#To find largest number among the three numbers
+
+num_1 = int (input("Enter first number: "))
+num_2 = int (input("Enter second  number: "))
+num_3 = int (input("Enter third number: "))
+
+if num_1 > num_2 and num_1 > num_3:
+    print("The first number is greater ")
+elif num_2 > num_1 and num_2 > num_3:
+    print("The second number is greater ")
+else:
+    print("The third number is greater ")
